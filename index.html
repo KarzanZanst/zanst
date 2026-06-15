@@ -100,9 +100,11 @@
     background:linear-gradient(135deg,rgba(212,166,74,.18),rgba(212,166,74,.06));
     border:1px solid rgba(212,166,74,.35);
   }
-  .phone .pico{width:38px;height:38px;border-radius:11px;background:var(--gold);
+  .phone .pico{width:44px;height:44px;border-radius:14px;
+    background:linear-gradient(145deg,#e6bf6a,#c79234);
+    box-shadow:0 6px 16px rgba(199,146,52,.4), inset 0 1px 0 rgba(255,255,255,.4);
     display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-  .phone .pico svg{width:20px;height:20px;fill:var(--ink);}
+  .phone .pico svg{width:23px;height:23px;fill:var(--ink);}
   .phone .pnum{direction:ltr;text-align:left;}
   .phone .pnum small{display:block;font-size:.72rem;color:var(--gold-soft);letter-spacing:.5px;}
   .phone .pnum span{font-size:1.3rem;font-weight:800;letter-spacing:1px;}
@@ -120,14 +122,20 @@
   .btn:hover{transform:translateY(-3px);}
   .btn:active{transform:translateY(0);}
   .btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
-  .btn .ico{width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;}
-  .btn .ico svg{width:24px;height:24px;fill:#fff;}
-  .btn.full{grid-column:1 / -1;flex-direction:row;gap:13px;padding:16px;}
-  .whatsapp .ico{background:var(--green);}
-  .viber .ico{background:var(--viber);}
-  .telegram .ico{background:var(--tg);}
-  .facebook .ico{background:var(--blue);}
-  .maps .ico{background:var(--map);}
+  .btn .ico{
+    width:50px;height:50px;border-radius:16px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.25);
+    transition:transform .18s ease;
+  }
+  .btn:hover .ico{transform:scale(1.08);}
+  .btn .ico svg{width:27px;height:27px;fill:#fff;filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));}
+  .btn.full{grid-column:1 / -1;flex-direction:row;gap:14px;padding:16px;}
+  .whatsapp .ico{background:linear-gradient(145deg,#42e16e,#1da851);}
+  .viber .ico{background:linear-gradient(145deg,#8b7bff,#5d4be0);}
+  .telegram .ico{background:linear-gradient(145deg,#3ec0fa,#1d96d4);}
+  .facebook .ico{background:linear-gradient(145deg,#3b8bff,#0d63d6);}
+  .maps .ico{background:linear-gradient(145deg,#ff5a4d,#d22f1f);}
 
   .foot{
     text-align:center;padding:16px;font-size:.82rem;color:var(--muted);
@@ -159,33 +167,33 @@
 
     <div class="phone">
       <span class="pico"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>
-      <span class="pnum"><small>تەلەفۆن / Phone</small><span>0751 183 8523</span></span>
+      <span class="pnum"><span>0751 183 8523</span></span>
     </div>
 
     <div class="links">
       <a class="btn whatsapp" href="https://wa.me/9647511838523" target="_blank" rel="noopener">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span>
-        WhatsApp
+        واتساپ
       </a>
 
       <a class="btn viber" href="viber://chat?number=%2B9647511838523" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.696 6.7.633 9.817.57 12.933.488 18.776 6.12 20.36h.003l-.004 2.416s-.037.977.61 1.177c.777.242 1.234-.5 1.98-1.302.408-.44.972-1.084 1.397-1.58 3.85.326 6.812-.416 7.15-.526.776-.252 5.176-.816 5.892-6.657.74-6.02-.36-9.83-2.34-11.546l-.005-.005C20.61.738 17.012.014 13.92.001c0 0-.74-.05-1.94-.001zm.063 1.71c1.018-.042 1.646.001 1.646.001 2.614.013 5.682.62 6.978 1.748 1.673 1.45 2.566 4.886 1.94 9.91-.6 4.872-4.167 5.179-4.825 5.39-.282.09-2.89.738-6.168.524 0 0-2.443 2.948-3.206 3.715-.12.12-.26.168-.354.144-.13-.033-.166-.188-.165-.414l.02-4.018c-4.762-1.318-4.485-6.292-4.43-8.895.054-2.604.546-4.736 1.998-6.172 1.96-1.786 5.477-2.052 7.139-2.094z"/></svg></span>
-        Viber
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 1.5C9.6 1.5 5.4 1.8 3.1 3.9 1.4 5.5.8 7.9.7 10.9c-.1 3-.2 8.6 5.2 10.1l.01 2.3c0 .5.6.8 1 .5l1.9-1.6c.5.04 1.1.06 1.6.06 2.4 0 6.6-.3 8.9-2.4 1.7-1.6 2.3-4 2.4-7 .1-3 .2-8.6-5.2-10.1C18.6 1.8 14.4 1.5 12 1.5zm5.7 14.2c-.3.7-1.3 1.3-2 1.4-.5.1-1 .2-3-.6-2.5-1-4.1-3.5-4.2-3.7-.1-.2-1-1.3-1-2.5 0-1.2.6-1.7.8-2 .2-.2.5-.3.6-.3h.5c.2 0 .4 0 .5.4.2.5.6 1.7.7 1.8.1.1.1.3 0 .4-.1.2-.1.3-.3.4l-.3.4c-.1.1-.2.3-.1.5.1.2.6 1 1.3 1.6.9.8 1.6 1 1.8 1.1.2.1.3.1.5-.1l.6-.7c.2-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.4.2.4.3.1.2.1.6-.1 1.3zM13 7.1c1.9.2 2.8 1.2 3 3.1.01.2-.1.4-.4.4-.2 0-.4-.2-.4-.4-.1-1.3-.7-1.9-2-2-.2 0-.4-.2-.4-.4 0-.2.2-.4.4-.4.04 0 .08 0 .12 0 .06 0 .11.1.18.1.16-.02.32-.02.5 0zm.4-1.4c1.6.1 2.6.5 3.3 1.2.7.7 1.1 1.7 1.2 3.3.01.2-.1.4-.4.4-.2 0-.4-.2-.4-.4-.1-1.4-.4-2.2-1-2.8-.6-.6-1.4-.9-2.8-1-.2 0-.4-.2-.4-.4 0-.2.2-.4.4-.4zm-.3 2.8c.7.1 1.1.5 1.2 1.2.01.2-.1.4-.3.4-.2.01-.4-.1-.4-.3-.06-.4-.2-.5-.6-.6-.2-.03-.3-.2-.3-.4.03-.2.2-.3.4-.3z"/></svg></span>
+        ڤایبەر
       </a>
 
       <a class="btn telegram full" href="https://t.me/zanstkarzan" target="_blank" rel="noopener">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></span>
-        Telegram &nbsp;@zanstkarzan
+        تێلێگرام
       </a>
 
       <a class="btn facebook" href="https://www.facebook.com/capamanyzanst" target="_blank" rel="noopener">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
-        Facebook
+        فەیسبووک
       </a>
 
-      <a class="btn maps" href="REPLACE_WITH_GOOGLE_MAPS_LINK" target="_blank" rel="noopener">
+      <a class="btn maps" href="https://maps.app.goo.gl/Tmmb4SR5EdqLJdC16" target="_blank" rel="noopener">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 0C7.802 0 4 3.403 4 7.602 4 11.8 7.469 16.812 12 24c4.531-7.188 8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg></span>
-        شوێن / Location
+        شوێن
       </a>
     </div>
 
